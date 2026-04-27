@@ -1,0 +1,25 @@
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FAF9F6;
+    background: linear-gradient(40deg, #1f1d1d 10%, #343231 70%);
+}
+#main{
+  margin-left: 50px;
+}
+
+.hyperlink{
+  color: #04AA6D;
+  text-decoration: none;
+}
+.hyperlink:hover{
+  text-decoration: underline;
+}
+.badge{
+  background-color: #df2929;
+  color: #FAF9F6;
+  padding: 3px 5px;
+  text-align: center;
+  border-radius: 5px;
+}
