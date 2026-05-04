@@ -1,6 +1,7 @@
 .nav-container{
-  position: relative;
+  position: absolute;
   transform: scale(var(--menu-scale));
+  z-index: 100;
 }
   .hexagon-item1 {
     cursor: pointer;
