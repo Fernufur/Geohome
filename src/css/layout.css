@@ -1,11 +1,15 @@
 *{
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
-body{
+/*-------------
+  base layout
+-------------*/
+.base-layout{
   min-height: 100vh;
   display: grid;
-  grid-template-columns: 5em 1fr;
+  grid-template-columns: 6em 1fr;
   grid-template-rows: auto 1fr auto;
   grid-template-areas:
   "header header"
@@ -16,10 +20,11 @@ header{
   top: 0;
   position: sticky;
   height: var(--header-height);
-  grid-area: header;
-}
+  grid-area: header; }
+
 aside{
-  top: calc(100vh - var(--header-height));
+  height: calc(var(--header-height) + var(--footer-height));
+  top: var(--header-height);
   position: sticky;
   align-self: start;
   grid-area: aside;
@@ -28,9 +33,26 @@ main{
   grid-area: main;
 }
 footer{
+  height: var(--footer-height);
   grid-area: footer;
 }
 
+/*---------------
+  header layout
+---------------*/
+
+/*-------------
+  side layout
+-------------*/
+.side-grid-container{
+  height: calc(100vh - (var(--header-height) + var(--footer-height)));
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 1em;
+}
+/*---------
+    main
+---------*/
 .opener{
   position: relative;
   text-align: center;
@@ -57,4 +79,19 @@ footer{
 #title-bg{
   width: 100%;
   max-height: 300px;
+}
+
+.progress-container {
+  width: 100vh;
+  height: 8px;
+  background: #ccc;
+  position: sticky;
+  bottom: 0;
+  z-index: 5;
+}
+.progress-bar {
+  height: 8px;
+  background: linear-gradient(90deg, #04aa6d 0%, #48f5b6 50%, #6df7d9 100%);
+  width: 0%;
+  z-index: 6;
 }

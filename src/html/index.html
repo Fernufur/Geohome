@@ -5,7 +5,7 @@
         <meta name="description" content="The General personal site of Azeal Stratos.">
         <meta name="author" content="Azeal Stratos">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+        <link rel="stylesheet" href="../css/variables.css">
         <link rel="stylesheet" href="../css/menu-style.css">
         <link rel="stylesheet" href="../css/layout.css">
         <link rel="stylesheet" href="../css/text.css">
@@ -14,177 +14,169 @@
         <title>GeoHome</title>
     </head>
     <body>
-        <header>
-                <div class="topnav" id="Topnav">
-                    <a class="active" href="index.html">Home</a>
-                    <a href="projects.html">Projects</a>
-                    <a href="links.html">Links</a>
-                    <a href="store.html">Commisions</a>
-                    <div class="searchBar">
-                        <form action="">
-                            <input class="search-input" type="text" name="search" placeholder="Search...">
-                            <img src="../assets/ searchicon.png" alt="Search Icon" class="search-icon">
-                        </form>
-                    </div>
-                    <a href="javascript:void(0);" class="icon" onclick="topnavFunc()">
-                        <i class="fa fa-bars"></i>
-                    </a>
+        <div class="base-layout">
+            <header>
+                <div>
+                    <p>header and stuff</p>
                 </div>
-        </header>
-        <aside>
-            <div class="nav-container">
-                <div class="hexagon-menu clear">
-                    <div class="hexagon-item1">
-                        <div class="hex-item">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="hex-item">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <a  class="hex-content" href="index.html">
-                            <span class="hex-content-inner">
-                                <span class="icon">
-                                    <i class="fa fa-home"></i>
+            </header>
+            <aside class="side-grid-container">
+                <div class="side-item">
+                    <p>yo</p>
+                </div>
+                <div class="side-item">
+                    <div class="nav-container">
+                        <div class="hexagon-item1">
+                            <div class="hex-item">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <div class="hex-item">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <a  class="hex-content" href="index.html">
+                                <span class="hex-content-inner">
+                                    <span class="icon">
+                                        <i class="fa fa-home"></i>
+                                    </span>
+                                    <span class="title">Home</span>
                                 </span>
-                                <span class="title">Home</span>
-                            </span>
-                            <svg viewBox="0 0 100 100" height="100" width="100" version="1.1" xmlns="http://www.w3.org/2000/svg"><polygon points="0,50 25,6 75,6 100,50 75,93 25,93" fill="#1e2530"></polygon></svg>
-                        </a>
+                                <svg viewBox="0 0 100 100" height="100" width="100" version="1.1" xmlns="http://www.w3.org/2000/svg"><polygon points="0,50 25,6 75,6 100,50 75,93 25,93" fill="#1e2530"></polygon></svg>
+                            </a>
+                        </div>
+                        <div class="hexagon-item2">
+                            <div class="hex-item">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <div class="hex-item">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <a  class="hex-content" href="">
+                                <span class="hex-content-inner">
+                                    <span class="icon">
+                                        <i class="fa fa-info"></i>
+                                    </span>
+                                    <span class="title">About</span>
+                                </span>
+                                <svg viewBox="0 0 100 100" height="100" width="100" version="1.1" xmlns="http://www.w3.org/2000/svg"><polygon points="0,50 25,6 75,6 100,50 75,93 25,93" fill="#1e2530"></polygon></svg>
+                            </a>
+                        </div>
+                        <div class="hexagon-item4">
+                            <div class="hex-item">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <div class="hex-item">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <a  class="hex-content" href="projects.html">
+                                <span class="hex-content-inner">
+                                    <span class="icon">
+                                        <i class="fa fa-list"></i>
+                                    </span>
+                                    <span class="title">Projects</span>
+                                </span>
+                                <svg viewBox="0 0 100 100" height="100" width="100" version="1.1" xmlns="http://www.w3.org/2000/svg"><polygon points="0,50 25,6 75,6 100,50 75,93 25,93" fill="#1e2530"></polygon></svg>
+                            </a>    
+                        </div>
+                        <div class="hexagon-item5">
+                            <div class="hex-item">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <div class="hex-item">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <a  class="hex-content" href="store.html">
+                                <span class="hex-content-inner">
+                                    <span class="icon">
+                                        <i class="fa fa-shopping-cart"></i>
+                                    </span>
+                                    <span class="title">Store</span>
+                                </span>
+                                <svg viewBox="0 0 100 100" height="100" width="100" version="1.1" xmlns="http://www.w3.org/2000/svg"><polygon points="0,50 25,6 75,6 100,50 75,93 25,93" fill="#1e2530"></polygon></svg>
+                            </a>
+                        </div>
+                        <div class="hexagon-item7">
+                            <div class="hex-item">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <div class="hex-item">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <a  class="hex-content" href="links.html">
+                                <span class="hex-content-inner">
+                                    <span class="icon">
+                                        <i class="fa fa-user"></i>
+                                    </span>
+                                    <span class="title">Links</span>
+                                </span>
+                                <svg viewBox="0 0 100 100" height="100" width="100" version="1.1" xmlns="http://www.w3.org/2000/svg"><polygon points="0,50 25,6 75,6 100,50 75,93 25,93" fill="#1e2530"></polygon></svg>
+                            </a>
+                        </div>
+                        <div class="hexagon-item8">
+                            <div class="hex-item">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <div class="hex-item">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <a  class="hex-content">
+                                <span class="hex-content-inner">
+                                    <span class="icon">
+                                        <i class=""></i>
+                                    </span>
+                                    <span class="title">Extra</span>
+                                </span>
+                                <svg viewBox="0 0 100 100" height="100" width="100" version="1.1" xmlns="http://www.w3.org/2000/svg"><polygon points="0,50 25,6 75,6 100,50 75,93 25,93" fill="#1e2530"></polygon></svg>
+                            </a>
+                        </div>
+                        <div class="hexagon-item9">
+                            <div class="hex-item">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <div class="hex-item">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <a  class="hex-content">
+                                <span class="hex-content-inner">
+                                    <span class="icon">
+                                        <i class="fa fa-cog"></i>
+                                    </span>
+                                    <span class="title">Settings</span>
+                                </span>
+                                <svg viewBox="0 0 100 100" height="100" width="100" version="1.1" xmlns="http://www.w3.org/2000/svg"><polygon points="0,50 25,6 75,6 100,50 75,93 25,93" fill="#1e2530"></polygon></svg>
+                            </a>
+                        </div>
                     </div>
-                <div class="hexagon-item2">
-                    <div class="hex-item">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                    <div class="hex-item">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                    <a  class="hex-content" href="">
-                        <span class="hex-content-inner">
-                            <span class="icon">
-                                <i class="fa fa-info"></i>
-                            </span>
-                            <span class="title">About</span>
-                        </span>
-                        <svg viewBox="0 0 100 100" height="100" width="100" version="1.1" xmlns="http://www.w3.org/2000/svg"><polygon points="0,50 25,6 75,6 100,50 75,93 25,93" fill="#1e2530"></polygon></svg>
-                    </a>
                 </div>
-                <div class="hexagon-item4">
-                    <div class="hex-item">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                    <div class="hex-item">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                    <a  class="hex-content" href="projects.html">
-                        <span class="hex-content-inner">
-                            <span class="icon">
-                                <i class="fa fa-list"></i>
-                            </span>
-                            <span class="title">Projects</span>
-                        </span>
-                        <svg viewBox="0 0 100 100" height="100" width="100" version="1.1" xmlns="http://www.w3.org/2000/svg"><polygon points="0,50 25,6 75,6 100,50 75,93 25,93" fill="#1e2530"></polygon></svg>
-                    </a>    
-                </div>
-                <div class="hexagon-item5">
-                    <div class="hex-item">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                    <div class="hex-item">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                    <a  class="hex-content" href="store.html">
-                        <span class="hex-content-inner">
-                            <span class="icon">
-                                <i class="fa fa-shopping-cart"></i>
-                            </span>
-                            <span class="title">Store</span>
-                        </span>
-                        <svg viewBox="0 0 100 100" height="100" width="100" version="1.1" xmlns="http://www.w3.org/2000/svg"><polygon points="0,50 25,6 75,6 100,50 75,93 25,93" fill="#1e2530"></polygon></svg>
-                    </a>
-                </div>
-                <div class="hexagon-item7">
-                    <div class="hex-item">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                    <div class="hex-item">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                    <a  class="hex-content" href="links.html">
-                        <span class="hex-content-inner">
-                            <span class="icon">
-                                <i class="fa fa-user"></i>
-                            </span>
-                            <span class="title">Links</span>
-                        </span>
-                        <svg viewBox="0 0 100 100" height="100" width="100" version="1.1" xmlns="http://www.w3.org/2000/svg"><polygon points="0,50 25,6 75,6 100,50 75,93 25,93" fill="#1e2530"></polygon></svg>
-                    </a>
-                </div>
-                <div class="hexagon-item8">
-                    <div class="hex-item">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                    <div class="hex-item">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                    <a  class="hex-content">
-                        <span class="hex-content-inner">
-                            <span class="icon">
-                                <i class=""></i>
-                            </span>
-                            <span class="title">Extra</span>
-                        </span>
-                        <svg viewBox="0 0 100 100" height="100" width="100" version="1.1" xmlns="http://www.w3.org/2000/svg"><polygon points="0,50 25,6 75,6 100,50 75,93 25,93" fill="#1e2530"></polygon></svg>
-                    </a>
-                </div>
-                <div class="hexagon-item9">
-                    <div class="hex-item">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                    <div class="hex-item">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                    <a  class="hex-content">
-                        <span class="hex-content-inner">
-                            <span class="icon">
-                                <i class="fa fa-cog"></i>
-                            </span>
-                            <span class="title">Settings</span>
-                        </span>
-                        <svg viewBox="0 0 100 100" height="100" width="100" version="1.1" xmlns="http://www.w3.org/2000/svg"><polygon points="0,50 25,6 75,6 100,50 75,93 25,93" fill="#1e2530"></polygon></svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-        </aside>
-        <main>
+            </aside>
+            <main>
                 <div>
                     <p>text here soon</p>
                     <p>text here soon</p>
@@ -216,14 +208,15 @@
                     <p>text here soon</p>
                     <p>text here soon</p>
                 </div>
-        </main>
-        <footer>
-            
-        </footer>
+            </main>
+            <footer>
+                <p>footer and things</p>
+            </footer>
+        </div>
         <div class="progress-container">
             <div class="progress-bar" id="ProgBar"></div>
         </div>
-        <script src="../functions/Util.js"></script>
-        <script src="../functions/Anim.js"></script>
     </body>
+    <script src="../functions/Util.js"></script>
+    <script src="../functions/Anim.js"></script>
 </html>

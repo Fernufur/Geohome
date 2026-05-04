@@ -1,594 +1,587 @@
-
-body {
-  font-family: "Libre Baskerville", serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 30px;
-  background-color: #0c0f15;
-  overflow:hidden;
-  color: #ababab; 
+.nav-container{
+  position: relative;
+  transform: scale(var(--menu-scale));
 }
-
-.hexagon-item1 {
-  cursor: pointer;
-  width: 100px;
-  height: 100px;
-  float: left;
-  margin-left: 0px;
-  z-index: 0;
-  position: absolute;
-  left: 15px;
-  bottom: 10px;}
-  .hexagon-item1:first-child {
-    margin-left: 0; }
-  .hexagon-item1:hover {
-    z-index: 1; }
-    .hexagon-item1:hover .hex-item:last-child {
-      opacity: 1;
-      transform: scale(1.3); }
-    .hexagon-item1:hover .hex-item:first-child {
-      opacity: 1;
-      transform: scale(1.2); }
-      .hexagon-item1:hover .hex-item:first-child div:before,
-      .hexagon-item1:hover .hex-item:first-child div:after {
-        height: 5px; }
-    .hexagon-item1:hover .hex-item div::before,
-    .hexagon-item1:hover .hex-item div::after {
-      background-color: #48f5b6; }
-    .hexagon-item1:hover .hex-content svg {
-      transform: scale(0.97); }
-      
-.hexagon-item2 {
-  cursor: pointer;
-  width: 100px;
-  height: 100px;
-  float: left;
-  margin-left: 0px;
-  z-index: 0;
-  position: absolute;
-  left: 99px;
-  bottom: 58px;}
-  .hexagon-item2:first-child {
-    margin-left: 0; }
-  .hexagon-item2:hover {
-    z-index: 1; }
-    .hexagon-item2:hover .hex-item:last-child {
-      opacity: 1;
-      transform: scale(1.3); }
-    .hexagon-item2:hover .hex-item:first-child {
-      opacity: 1;
-      transform: scale(1.2); }
-      .hexagon-item2:hover .hex-item:first-child div:before,
-      .hexagon-item2:hover .hex-item:first-child div:after {
-        height: 5px; }
-    .hexagon-item2:hover .hex-item div::before,
-    .hexagon-item2:hover .hex-item div::after {
-      background-color: #48f5b6; }
-    .hexagon-item2:hover .hex-content svg {
-      transform: scale(0.97); }
-
-.hexagon-item3 {
-  cursor: pointer;
-  width: 100px;
-  height: 100px;
-  float: left;
-  margin-left: 0px;
-  z-index: 0;
-  position: absolute;
-  left: 15px;
-  bottom: 107px;}
-  .hexagon-item3:first-child {
-    margin-left: 0; }
-  .hexagon-item3:hover {
-    z-index: 1; }
-    .hexagon-item3:hover .hex-item:last-child {
-      opacity: 1;
-      transform: scale(1.3); }
-    .hexagon-item3:hover .hex-item:first-child {
-      opacity: 1;
-      transform: scale(1.2); }
-      .hexagon-item3:hover .hex-item:first-child div:before,
-      .hexagon-item3:hover .hex-item:first-child div:after {
-        height: 5px; }
-    .hexagon-item3:hover .hex-item div::before,
-    .hexagon-item3:hover .hex-item div::after {
-      background-color: #48f5b6; }
-    .hexagon-item3:hover .hex-content svg {
-      transform: scale(0.97); }
-
-.hexagon-item4 {
-  cursor: pointer;
-  width: 100px;
-  height: 100px;
-  float: left;
-  margin-left: 0px;
-  z-index: 0;
-  position: absolute;
-  left: 99px;
-  bottom: 155px;}
-  .hexagon-item4:first-child {
-    margin-left: 0; }
-  .hexagon-item4:hover {
-    z-index: 1; }
-    .hexagon-item4:hover .hex-item:last-child {
-      opacity: 1;
-      transform: scale(1.3); }
-    .hexagon-item4:hover .hex-item:first-child {
-      opacity: 1;
-      transform: scale(1.2); }
-      .hexagon-item4:hover .hex-item:first-child div:before,
-      .hexagon-item4:hover .hex-item:first-child div:after {
-        height: 5px; }
-    .hexagon-item4:hover .hex-item div::before,
-    .hexagon-item4:hover .hex-item div::after {
-      background-color: #48f5b6; }
-    .hexagon-item4:hover .hex-content svg {
-      transform: scale(0.97); }
-      
-.hexagon-item5 {
-  cursor: pointer;
-  width: 100px;
-  height: 100px;
-  float: left;
-  margin-left: 0px;
-  z-index: 0;
-  position: absolute;
-  left: 15px;
-  bottom: 204px;}
-  .hexagon-item5:first-child {
-    margin-left: 0; }
-  .hexagon-item5:hover {
-    z-index: 1; }
-    .hexagon-item5:hover .hex-item:last-child {
-      opacity: 1;
-      transform: scale(1.3); }
-    .hexagon-item5:hover .hex-item:first-child {
-      opacity: 1;
-      transform: scale(1.2); }
-      .hexagon-item5:hover .hex-item:first-child div:before,
-      .hexagon-item5:hover .hex-item:first-child div:after {
-        height: 5px; }
-    .hexagon-item5:hover .hex-item div::before,
-    .hexagon-item5:hover .hex-item div::after {
-      background-color: #48f5b6; }
-    .hexagon-item5:hover .hex-content svg {
-      transform: scale(0.97); }
-
-.hexagon-item6 {
-  cursor: pointer;
-  width: 100px;
-  height: 100px;
-  float: left;
-  margin-left: 0px;
-  z-index: 0;
-  position: absolute;
-  left: 99px;
-  bottom: 349px;}
-  .hexagon-item6:first-child {
-    margin-left: 0; }
-  .hexagon-item6:hover {
-    z-index: 1; }
-    .hexagon-item6:hover .hex-item:last-child {
-      opacity: 1;
-      transform: scale(1.3); }
-    .hexagon-item6:hover .hex-item:first-child {
-      opacity: 1;
-      transform: scale(1.2); }
-      .hexagon-item6:hover .hex-item:first-child div:before,
-      .hexagon-item6:hover .hex-item:first-child div:after {
-        height: 5px; }
-    .hexagon-item6:hover .hex-item div::before,
-    .hexagon-item6:hover .hex-item div::after {
-      background-color: #48f5b6; }
-    .hexagon-item6:hover .hex-content svg {
-      transform: scale(0.97); }
-
-.hexagon-item7 {
-  cursor: pointer;
-  width: 100px;
-  height: 100px;
-  float: left;
-  margin-left: 0px;
-  z-index: 0;
-  position: absolute;
-  left: 15px;
-  bottom: 301px;}
-  .hexagon-item7:first-child {
-    margin-left: 0; }
-  .hexagon-item7:hover {
-    z-index: 1; }
-    .hexagon-item7:hover .hex-item:last-child {
-      opacity: 1;
-      transform: scale(1.3); }
-    .hexagon-item7:hover .hex-item:first-child {
-      opacity: 1;
-      transform: scale(1.2); }
-      .hexagon-item7:hover .hex-item:first-child div:before,
-      .hexagon-item7:hover .hex-item:first-child div:after {
-        height: 5px; }
-    .hexagon-item7:hover .hex-item div::before,
-    .hexagon-item7:hover .hex-item div::after {
-      background-color: #48f5b6; }
-    .hexagon-item7:hover .hex-content svg {
-      transform: scale(0.97); }
-      
-.hexagon-item8 {
-  cursor: pointer;
-  width: 100px;
-  height: 100px;
-  float: left;
-  margin-left: 0px;
-  z-index: 0;
-  position: absolute;
-  left: 99px;
-  bottom: 349px;}
-  .hexagon-item8:first-child {
-    margin-left: 0; }
-  .hexagon-item8:hover {
-    z-index: 1; }
-    .hexagon-item8:hover .hex-item:last-child {
-      opacity: 1;
-      transform: scale(1.3); }
-    .hexagon-item8:hover .hex-item:first-child {
-      opacity: 1;
-      transform: scale(1.2); }
-      .hexagon-item8:hover .hex-item:first-child div:before,
-      .hexagon-item8:hover .hex-item:first-child div:after {
-        height: 5px; }
-    .hexagon-item8:hover .hex-item div::before,
-    .hexagon-item8:hover .hex-item div::after {
-      background-color: #48f5b6; }
-    .hexagon-item8:hover .hex-content svg {
-      transform: scale(0.97); }
-
-.hexagon-item9 {
-  cursor: pointer;
-  width: 100px;
-  height: 100px;
-  float: left;
-  margin-left: 0px;
-  z-index: 0;
-  position: absolute;
-  left: 15px;
-  bottom: 398px;}
-  .hexagon-item9:first-child {
-    margin-left: 0; }
-  .hexagon-item9:hover {
-    z-index: 1; }
-    .hexagon-item9:hover .hex-item:last-child {
-      opacity: 1;
-      transform: scale(1.3); }
-    .hexagon-item9:hover .hex-item:first-child {
-      opacity: 1;
-      transform: scale(1.2); }
-      .hexagon-item9:hover .hex-item:first-child div:before,
-      .hexagon-item9:hover .hex-item:first-child div:after {
-        height: 5px; }
-    .hexagon-item9:hover .hex-item div::before,
-    .hexagon-item9:hover .hex-item div::after {
-      background-color: #48f5b6; }
-    .hexagon-item9:hover .hex-content svg {
-      transform: scale(0.97); }
-      
-.back-button{
-    position: absolute;
-    left: 5px;
-    bottom: 102px;
-}
-
-.hexagon-item1-s {
-  cursor: pointer;
-  width: 60px;
-  height: 60px;
-  float: left;
-  margin-left: 0px;
-  z-index: 0;
-  position: absolute;
-  left: 97px;
-  bottom: 79px;}
-  .hexagon-item1-s:first-child {
-    margin-left: 0; }
-  .hexagon-item1-s:hover {
-    z-index: 1; }
-    .hexagon-item1-s:hover .hex-item-s div::before,
-    .hexagon-item1-s:hover .hex-item-s div::after {
-      background-color: #48f5b6; }
-    .hexagon-item1-s:hover .hex-content svg {
-      transform: scale(0.97); }
-
-.hexagon-item2-s {
-  cursor: pointer;
-  width: 60px;
-  height: 60px;
-  float: left;
-  margin-left: 0px;
-  z-index: 0;
-  position: absolute;
-  left: 47px;
-  bottom: 107px;}
-  .hexagon-item2-s:first-child {
-    margin-left: 0; }
-  .hexagon-item2-s:hover {
-    z-index: 1; }
-    .hexagon-item2-s:hover .hex-item-s div::before,
-    .hexagon-item2-s:hover .hex-item-s div::after {
-      background-color: #48f5b6; }
-    .hexagon-item2-s:hover .hex-content svg {
-      transform: scale(0.97); }
-
-.hexagon-item3-s {
-  cursor: pointer;
-  width: 60px;
-  height: 60px;
-  float: left;
-  margin-left: 0px;
-  z-index: 0;
-  position: absolute;
-  left: 97px;
-  bottom: 136px;}
-  .hexagon-item3-s:first-child {
-    margin-left: 0; }
-  .hexagon-item3-s:hover {
-    z-index: 1; }
-    .hexagon-item3-s:hover .hex-item-s div::before,
-    .hexagon-item3-s:hover .hex-item-s div::after {
-      background-color: #48f5b6; }
-    .hexagon-item3-s:hover .hex-content svg {
-      transform: scale(0.97); }
-
-.hexagon-item4-s {
-  cursor: pointer;
-  width: 60px;
-  height: 60px;
-  float: left;
-  margin-left: 0px;
-  z-index: 0;
-  position: absolute;
-  left: 47px;
-  bottom: 164px;}
-  .hexagon-item4-s:first-child {
-    margin-left: 0; }
-  .hexagon-item4-s:hover {
-    z-index: 1; }
-    .hexagon-item4-s:hover .hex-item-s div::before,
-    .hexagon-item4-s:hover .hex-item-s div::after {
-      background-color: #48f5b6; }
-    .hexagon-item4-s:hover .hex-content svg {
-      transform: scale(0.97); }
-
-.hexagon-item5-s {
-  cursor: pointer;
-  width: 60px;
-  height: 60px;
-  float: left;
-  margin-left: 0px;
-  z-index: 0;
-  position: absolute;
-  left: 97px;
-  bottom: 193px;}
-  .hexagon-item5-s:first-child {
-    margin-left: 0; }
-  .hexagon-item5-s:hover {
-    z-index: 1; }
-    .hexagon-item5-s:hover .hex-item-s div::before,
-    .hexagon-item5-s:hover .hex-item-s div::after {
-      background-color: #48f5b6; }
-    .hexagon-item5-s:hover .hex-content svg {
-      transform: scale(0.97); }
-
-.hexagon-item6-s {
-  cursor: pointer;
-  width: 60px;
-  height: 60px;
-  float: left;
-  margin-left: 0px;
-  z-index: 0;
-  position: absolute;
-  left: 47px;
-  bottom: 221px;}
-  .hexagon-item6-s:first-child {
-    margin-left: 0; }
-  .hexagon-item6-s:hover {
-    z-index: 1; }
-    .hexagon-item6-s:hover .hex-item-s div::before,
-    .hexagon-item6-s:hover .hex-item-s div::after {
-      background-color: #48f5b6; }
-    .hexagon-item6-s:hover .hex-content svg {
-      transform: scale(0.97); }
-
-.hexagon-item7-s {
-  cursor: pointer;
-  width: 60px;
-  height: 60px;
-  float: left;
-  margin-left: 0px;
-  z-index: 0;
-  position: absolute;
-  left: 97px;
-  bottom: 250px;}
-  .hexagon-item7-s:first-child {
-    margin-left: 0; }
-  .hexagon-item7-s:hover {
-    z-index: 1; }
-    .hexagon-item7-s:hover .hex-item-s div::before,
-    .hexagon-item7-s:hover .hex-item-s div::after {
-      background-color: #48f5b6; }
-    .hexagon-item7-s:hover .hex-content svg {
-      transform: scale(0.97); }
-
-.hexagon-item8-s {
-  cursor: pointer;
-  width: 60px;
-  height: 60px;
-  float: left;
-  margin-left: 0px;
-  z-index: 0;
-  position: absolute;
-  left: 47px;
-  bottom: 278px;}
-  .hexagon-item8-s:first-child {
-    margin-left: 0; }
-  .hexagon-item8-s:hover {
-    z-index: 1; }
-    .hexagon-item8-s:hover .hex-item-s div::before,
-    .hexagon-item8-s:hover .hex-item-s div::after {
-      background-color: #48f5b6; }
-    .hexagon-item8-s:hover .hex-content svg {
-      transform: scale(0.97); }
-
-
-.hex-item {
-  position: absolute;
-  top: 0;
-  left: 0px;
-  width: 100px;
-  height: 100px; }
-  .hex-item:first-child {
-    left: -1.5px;
-    z-index: 0;
-    transform: scale(0.7);
-    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1); }
-  .hex-item:last-child {
-    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
-    z-index: 1; }
-  .hex-item div {
-    left: 20.5px;
-    box-sizing: border-box;
-    position: absolute;
-    top: 0;
-    width: 58.5px;
+  .hexagon-item1 {
+    cursor: pointer;
+    width: 100px;
     height: 100px;
-    transform-origin: center center; }
-    .hex-item div::before, .hex-item div::after {
-      background-color: #1e2530;
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 3px;
-      transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) 0s; }
-    .hex-item div:before {
-      top: 0; }
-    .hex-item div:after {
-      bottom: 0; }
-    .hex-item div:nth-child(1) {
-      transform: rotate(0deg); }
-    .hex-item div:nth-child(2) {
-      transform: rotate(60deg); }
-    .hex-item div:nth-child(3) {
-      transform: rotate(120deg); }
+    float: left;
+    margin-left: 0px;
+    z-index: 0;
+    position: absolute;
+    left: 15px;
+    bottom: 10px;}
+    .hexagon-item1:first-child {
+      margin-left: 0; }
+    .hexagon-item1:hover {
+      z-index: 1; }
+      .hexagon-item1:hover .hex-item:last-child {
+        opacity: 1;
+        transform: scale(1.3); }
+      .hexagon-item1:hover .hex-item:first-child {
+        opacity: 1;
+        transform: scale(1.2); }
+        .hexagon-item1:hover .hex-item:first-child div:before,
+        .hexagon-item1:hover .hex-item:first-child div:after {
+          height: 5px; }
+      .hexagon-item1:hover .hex-item div::before,
+      .hexagon-item1:hover .hex-item div::after {
+        background-color: #48f5b6; }
+      .hexagon-item1:hover .hex-content svg {
+        transform: scale(0.97); }
+        
+  .hexagon-item2 {
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-left: 0px;
+    z-index: 0;
+    position: absolute;
+    left: 99px;
+    bottom: 58px;}
+    .hexagon-item2:first-child {
+      margin-left: 0; }
+    .hexagon-item2:hover {
+      z-index: 1; }
+      .hexagon-item2:hover .hex-item:last-child {
+        opacity: 1;
+        transform: scale(1.3); }
+      .hexagon-item2:hover .hex-item:first-child {
+        opacity: 1;
+        transform: scale(1.2); }
+        .hexagon-item2:hover .hex-item:first-child div:before,
+        .hexagon-item2:hover .hex-item:first-child div:after {
+          height: 5px; }
+      .hexagon-item2:hover .hex-item div::before,
+      .hexagon-item2:hover .hex-item div::after {
+        background-color: #48f5b6; }
+      .hexagon-item2:hover .hex-content svg {
+        transform: scale(0.97); }
 
-.hex-item-s {
-  position: absolute;
-  top: 0;
-  left: 0px;
-  width: 60px;
-  height: 60px; }
-  .hex-item-s:first-child {
-    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
-    z-index: 1; }
-  .hex-item-s div {
-    left: 12px;
-    box-sizing: border-box;
+  .hexagon-item3 {
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-left: 0px;
+    z-index: 0;
+    position: absolute;
+    left: 15px;
+    bottom: 107px;}
+    .hexagon-item3:first-child {
+      margin-left: 0; }
+    .hexagon-item3:hover {
+      z-index: 1; }
+      .hexagon-item3:hover .hex-item:last-child {
+        opacity: 1;
+        transform: scale(1.3); }
+      .hexagon-item3:hover .hex-item:first-child {
+        opacity: 1;
+        transform: scale(1.2); }
+        .hexagon-item3:hover .hex-item:first-child div:before,
+        .hexagon-item3:hover .hex-item:first-child div:after {
+          height: 5px; }
+      .hexagon-item3:hover .hex-item div::before,
+      .hexagon-item3:hover .hex-item div::after {
+        background-color: #48f5b6; }
+      .hexagon-item3:hover .hex-content svg {
+        transform: scale(0.97); }
+
+  .hexagon-item4 {
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-left: 0px;
+    z-index: 0;
+    position: absolute;
+    left: 99px;
+    bottom: 155px;}
+    .hexagon-item4:first-child {
+      margin-left: 0; }
+    .hexagon-item4:hover {
+      z-index: 1; }
+      .hexagon-item4:hover .hex-item:last-child {
+        opacity: 1;
+        transform: scale(1.3); }
+      .hexagon-item4:hover .hex-item:first-child {
+        opacity: 1;
+        transform: scale(1.2); }
+        .hexagon-item4:hover .hex-item:first-child div:before,
+        .hexagon-item4:hover .hex-item:first-child div:after {
+          height: 5px; }
+      .hexagon-item4:hover .hex-item div::before,
+      .hexagon-item4:hover .hex-item div::after {
+        background-color: #48f5b6; }
+      .hexagon-item4:hover .hex-content svg {
+        transform: scale(0.97); }
+        
+  .hexagon-item5 {
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-left: 0px;
+    z-index: 0;
+    position: absolute;
+    left: 15px;
+    bottom: 204px;}
+    .hexagon-item5:first-child {
+      margin-left: 0; }
+    .hexagon-item5:hover {
+      z-index: 1; }
+      .hexagon-item5:hover .hex-item:last-child {
+        opacity: 1;
+        transform: scale(1.3); }
+      .hexagon-item5:hover .hex-item:first-child {
+        opacity: 1;
+        transform: scale(1.2); }
+        .hexagon-item5:hover .hex-item:first-child div:before,
+        .hexagon-item5:hover .hex-item:first-child div:after {
+          height: 5px; }
+      .hexagon-item5:hover .hex-item div::before,
+      .hexagon-item5:hover .hex-item div::after {
+        background-color: #48f5b6; }
+      .hexagon-item5:hover .hex-content svg {
+        transform: scale(0.97); }
+
+  .hexagon-item6 {
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-left: 0px;
+    z-index: 0;
+    position: absolute;
+    left: 99px;
+    bottom: 349px;}
+    .hexagon-item6:first-child {
+      margin-left: 0; }
+    .hexagon-item6:hover {
+      z-index: 1; }
+      .hexagon-item6:hover .hex-item:last-child {
+        opacity: 1;
+        transform: scale(1.3); }
+      .hexagon-item6:hover .hex-item:first-child {
+        opacity: 1;
+        transform: scale(1.2); }
+        .hexagon-item6:hover .hex-item:first-child div:before,
+        .hexagon-item6:hover .hex-item:first-child div:after {
+          height: 5px; }
+      .hexagon-item6:hover .hex-item div::before,
+      .hexagon-item6:hover .hex-item div::after {
+        background-color: #48f5b6; }
+      .hexagon-item6:hover .hex-content svg {
+        transform: scale(0.97); }
+
+  .hexagon-item7 {
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-left: 0px;
+    z-index: 0;
+    position: absolute;
+    left: 15px;
+    bottom: 301px;}
+    .hexagon-item7:first-child {
+      margin-left: 0; }
+    .hexagon-item7:hover {
+      z-index: 1; }
+      .hexagon-item7:hover .hex-item:last-child {
+        opacity: 1;
+        transform: scale(1.3); }
+      .hexagon-item7:hover .hex-item:first-child {
+        opacity: 1;
+        transform: scale(1.2); }
+        .hexagon-item7:hover .hex-item:first-child div:before,
+        .hexagon-item7:hover .hex-item:first-child div:after {
+          height: 5px; }
+      .hexagon-item7:hover .hex-item div::before,
+      .hexagon-item7:hover .hex-item div::after {
+        background-color: #48f5b6; }
+      .hexagon-item7:hover .hex-content svg {
+        transform: scale(0.97); }
+        
+  .hexagon-item8 {
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-left: 0px;
+    z-index: 0;
+    position: absolute;
+    left: 99px;
+    bottom: 349px;}
+    .hexagon-item8:first-child {
+      margin-left: 0; }
+    .hexagon-item8:hover {
+      z-index: 1; }
+      .hexagon-item8:hover .hex-item:last-child {
+        opacity: 1;
+        transform: scale(1.3); }
+      .hexagon-item8:hover .hex-item:first-child {
+        opacity: 1;
+        transform: scale(1.2); }
+        .hexagon-item8:hover .hex-item:first-child div:before,
+        .hexagon-item8:hover .hex-item:first-child div:after {
+          height: 5px; }
+      .hexagon-item8:hover .hex-item div::before,
+      .hexagon-item8:hover .hex-item div::after {
+        background-color: #48f5b6; }
+      .hexagon-item8:hover .hex-content svg {
+        transform: scale(0.97); }
+
+  .hexagon-item9 {
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-left: 0px;
+    z-index: 0;
+    position: absolute;
+    left: 15px;
+    bottom: 398px;}
+    .hexagon-item9:first-child {
+      margin-left: 0; }
+    .hexagon-item9:hover {
+      z-index: 1; }
+      .hexagon-item9:hover .hex-item:last-child {
+        opacity: 1;
+        transform: scale(1.3); }
+      .hexagon-item9:hover .hex-item:first-child {
+        opacity: 1;
+        transform: scale(1.2); }
+        .hexagon-item9:hover .hex-item:first-child div:before,
+        .hexagon-item9:hover .hex-item:first-child div:after {
+          height: 5px; }
+      .hexagon-item9:hover .hex-item div::before,
+      .hexagon-item9:hover .hex-item div::after {
+        background-color: #48f5b6; }
+      .hexagon-item9:hover .hex-content svg {
+        transform: scale(0.97); }
+        
+  .back-button{
+      position: absolute;
+      left: 5px;
+      bottom: 102px;
+  }
+
+  .hexagon-item1-s {
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-left: 0px;
+    z-index: 0;
+    position: absolute;
+    left: 97px;
+    bottom: 79px;}
+    .hexagon-item1-s:first-child {
+      margin-left: 0; }
+    .hexagon-item1-s:hover {
+      z-index: 1; }
+      .hexagon-item1-s:hover .hex-item-s div::before,
+      .hexagon-item1-s:hover .hex-item-s div::after {
+        background-color: #48f5b6; }
+      .hexagon-item1-s:hover .hex-content svg {
+        transform: scale(0.97); }
+
+  .hexagon-item2-s {
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-left: 0px;
+    z-index: 0;
+    position: absolute;
+    left: 47px;
+    bottom: 107px;}
+    .hexagon-item2-s:first-child {
+      margin-left: 0; }
+    .hexagon-item2-s:hover {
+      z-index: 1; }
+      .hexagon-item2-s:hover .hex-item-s div::before,
+      .hexagon-item2-s:hover .hex-item-s div::after {
+        background-color: #48f5b6; }
+      .hexagon-item2-s:hover .hex-content svg {
+        transform: scale(0.97); }
+
+  .hexagon-item3-s {
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-left: 0px;
+    z-index: 0;
+    position: absolute;
+    left: 97px;
+    bottom: 136px;}
+    .hexagon-item3-s:first-child {
+      margin-left: 0; }
+    .hexagon-item3-s:hover {
+      z-index: 1; }
+      .hexagon-item3-s:hover .hex-item-s div::before,
+      .hexagon-item3-s:hover .hex-item-s div::after {
+        background-color: #48f5b6; }
+      .hexagon-item3-s:hover .hex-content svg {
+        transform: scale(0.97); }
+
+  .hexagon-item4-s {
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-left: 0px;
+    z-index: 0;
+    position: absolute;
+    left: 47px;
+    bottom: 164px;}
+    .hexagon-item4-s:first-child {
+      margin-left: 0; }
+    .hexagon-item4-s:hover {
+      z-index: 1; }
+      .hexagon-item4-s:hover .hex-item-s div::before,
+      .hexagon-item4-s:hover .hex-item-s div::after {
+        background-color: #48f5b6; }
+      .hexagon-item4-s:hover .hex-content svg {
+        transform: scale(0.97); }
+
+  .hexagon-item5-s {
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-left: 0px;
+    z-index: 0;
+    position: absolute;
+    left: 97px;
+    bottom: 193px;}
+    .hexagon-item5-s:first-child {
+      margin-left: 0; }
+    .hexagon-item5-s:hover {
+      z-index: 1; }
+      .hexagon-item5-s:hover .hex-item-s div::before,
+      .hexagon-item5-s:hover .hex-item-s div::after {
+        background-color: #48f5b6; }
+      .hexagon-item5-s:hover .hex-content svg {
+        transform: scale(0.97); }
+
+  .hexagon-item6-s {
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-left: 0px;
+    z-index: 0;
+    position: absolute;
+    left: 47px;
+    bottom: 221px;}
+    .hexagon-item6-s:first-child {
+      margin-left: 0; }
+    .hexagon-item6-s:hover {
+      z-index: 1; }
+      .hexagon-item6-s:hover .hex-item-s div::before,
+      .hexagon-item6-s:hover .hex-item-s div::after {
+        background-color: #48f5b6; }
+      .hexagon-item6-s:hover .hex-content svg {
+        transform: scale(0.97); }
+
+  .hexagon-item7-s {
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-left: 0px;
+    z-index: 0;
+    position: absolute;
+    left: 97px;
+    bottom: 250px;}
+    .hexagon-item7-s:first-child {
+      margin-left: 0; }
+    .hexagon-item7-s:hover {
+      z-index: 1; }
+      .hexagon-item7-s:hover .hex-item-s div::before,
+      .hexagon-item7-s:hover .hex-item-s div::after {
+        background-color: #48f5b6; }
+      .hexagon-item7-s:hover .hex-content svg {
+        transform: scale(0.97); }
+
+  .hexagon-item8-s {
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-left: 0px;
+    z-index: 0;
+    position: absolute;
+    left: 47px;
+    bottom: 278px;}
+    .hexagon-item8-s:first-child {
+      margin-left: 0; }
+    .hexagon-item8-s:hover {
+      z-index: 1; }
+      .hexagon-item8-s:hover .hex-item-s div::before,
+      .hexagon-item8-s:hover .hex-item-s div::after {
+        background-color: #48f5b6; }
+      .hexagon-item8-s:hover .hex-content svg {
+        transform: scale(0.97); }
+
+
+  .hex-item {
     position: absolute;
     top: 0;
-    width: 35px;
-    height: 60px;
-    transform-origin: center center; }
-    .hex-item-s div::before, .hex-item-s div::after {
-      background-color: #1e2530;
-      content: "";
+    left: 0px;
+    width: 100px;
+    height: 100px; }
+    .hex-item:first-child {
+      left: -1.5px;
+      z-index: 0;
+      transform: scale(0.7);
+      transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1); }
+    .hex-item:last-child {
+      transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+      z-index: 1; }
+    .hex-item div {
+      left: 20.5px;
+      box-sizing: border-box;
       position: absolute;
-      width: 100%;
-      height: 3px;
+      top: 0;
+      width: 58.5px;
+      height: 100px;
+      transform-origin: center center; }
+      .hex-item div::before, .hex-item div::after {
+        background-color: #1e2530;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) 0s; }
+      .hex-item div:before {
+        top: 0; }
+      .hex-item div:after {
+        bottom: 0; }
+      .hex-item div:nth-child(1) {
+        transform: rotate(0deg); }
+      .hex-item div:nth-child(2) {
+        transform: rotate(60deg); }
+      .hex-item div:nth-child(3) {
+        transform: rotate(120deg); }
+
+  .hex-item-s {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 60px;
+    height: 60px; }
+    .hex-item-s:first-child {
+      transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+      z-index: 1; }
+    .hex-item-s div {
+      left: 12px;
+      box-sizing: border-box;
+      position: absolute;
+      top: 0;
+      width: 35px;
+      height: 60px;
+      transform-origin: center center; }
+      .hex-item-s div::before, .hex-item-s div::after {
+        background-color: #1e2530;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) 0s; }
+      .hex-item-s div:before {
+        top: 0; }
+      .hex-item-s div:after {
+        bottom: 0; }
+      .hex-item-s div:nth-child(1) {
+        transform: rotate(0deg); }
+      .hex-item-s div:nth-child(2) {
+        transform: rotate(60deg); }
+      .hex-item-s div:nth-child(3) {
+        transform: rotate(120deg); }
+
+  .hex-content {
+    color: #fff;
+    display: block;
+    height: 80px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    transform: rotate(0deg);    
+    width: 80px; }
+    .hex-content .hex-content-inner {
+      left: 38%;
+      margin: 10px 0 0 10px;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%); }
+    .hex-content .icon {
+      display: block;
+      font-size: 36px;
+      line-height: 30px;
+      margin-bottom: 11px; }
+    .hex-content .title {
+      display: block;
+      font-family: "Open Sans", sans-serif;
+      font-size: 14px;
+      letter-spacing: 1px;
+      line-height: 24px;
+      text-transform: uppercase; }
+    .hex-content svg {
+      left: -10px;
+      position: absolute;
+      top: 0px;
+      z-index: -1;
       transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) 0s; }
-    .hex-item-s div:before {
-      top: 0; }
-    .hex-item-s div:after {
-      bottom: 0; }
-    .hex-item-s div:nth-child(1) {
-      transform: rotate(0deg); }
-    .hex-item-s div:nth-child(2) {
-      transform: rotate(60deg); }
-    .hex-item-s div:nth-child(3) {
-      transform: rotate(120deg); }
+    .hex-content:hover {
+      color: #fff;
+    }
 
-.hex-content {
-  color: #fff;
-  display: block;
-  height: 80px;
-  margin: 0 auto;
-  position: relative;
-  text-align: center;
-  transform: rotate(0deg);    
-  width: 80px; }
-  .hex-content .hex-content-inner {
-    left: 38%;
-    margin: 10px 0 0 10px;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%); }
-  .hex-content .icon {
-    display: block;
-    font-size: 36px;
-    line-height: 30px;
-    margin-bottom: 11px; }
-  .hex-content .title {
-    display: block;
-    font-family: "Open Sans", sans-serif;
-    font-size: 14px;
-    letter-spacing: 1px;
-    line-height: 24px;
-    text-transform: uppercase; }
-  .hex-content svg {
-    left: -10px;
-    position: absolute;
-    top: 0px;
-    z-index: -1;
-    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) 0s; }
-  .hex-content:hover {
+  .hex-content-s {
     color: #fff;
-   }
-
-.hex-content-s {
-  color: #fff;
-  display: block;
-  height: 40px;
-  margin: 0 auto;
-  position: relative;
-  text-align: center;
-  transform: rotate(0deg);    
-  width: 40px; }
-  .hex-content-s .hex-content-inner {
-    left: 24%;
-    margin: 10px 0 0 10px;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%); }
-  .hex-content-s .icon {
     display: block;
-    font-size: 24px;
-    line-height: 20px;
-    margin-bottom: 5px; }
-  .hex-content-s .title {
-    opacity: 0;
-    display: block;
-    font-family: "Open Sans", sans-serif;
-    text-decoration: none;
-    text-indent: 4em;
-    font-size: 14px;
-    letter-spacing: 2px;
-    line-height: 58px;
-    text-transform: uppercase;
-    transform: rotate(-30deg); }
-  .hex-content-s svg {
-    left: -10px;
-    position: absolute;
-    top: 0px;
-    z-index: -1;
-    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) 0s; }
-  .hex-content-s:hover {
-    color: #fff;
-   }
+    height: 40px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    transform: rotate(0deg);    
+    width: 40px; }
+    .hex-content-s .hex-content-inner {
+      left: 24%;
+      margin: 10px 0 0 10px;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%); }
+    .hex-content-s .icon {
+      display: block;
+      font-size: 24px;
+      line-height: 20px;
+      margin-bottom: 5px; }
+    .hex-content-s .title {
+      opacity: 0;
+      display: block;
+      font-family: "Open Sans", sans-serif;
+      text-decoration: none;
+      text-indent: 4em;
+      font-size: 14px;
+      letter-spacing: 2px;
+      line-height: 58px;
+      text-transform: uppercase;
+      transform: rotate(-30deg); }
+    .hex-content-s svg {
+      left: -10px;
+      position: absolute;
+      top: 0px;
+      z-index: -1;
+      transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) 0s; }
+    .hex-content-s:hover {
+      color: #fff;
+    }
 
 #hex:hover #menu-icon i
 {

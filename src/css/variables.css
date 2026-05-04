@@ -1,3 +1,5 @@
 :root {
-  --header-height: 0.5em;
+  --header-height: 4.5em;
+  --footer-height: 3em;
+  --menu-scale: 0.8;
 }
