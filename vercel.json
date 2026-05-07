@@ -1,5 +1,5 @@
 {
-  "$schema": "https://github.com/Fernufur/Geohome/edit/main/vercel.json",
+  "$schema": "https://github.com/Fernufur/Geohome/vercel.json",
   "git": {
     "deploymentEnabled": false
   }
