@@ -3,4 +3,5 @@
   "git": {
     "deploymentEnabled": false
   }
+  "outputDirectory": "src/html"
 }
