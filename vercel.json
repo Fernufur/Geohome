@@ -1,7 +1,0 @@
-{
-  "$schema": "https://github.com/Fernufur/Geohome/vercel.json",
-  "git": {
-    "deploymentEnabled": false
-  }
-  "outputDirectory": "src/html"
-}
