@@ -1,17 +1,6 @@
 {
-  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "$schema": "https://github.com/Fernufur/Geohome/edit/main/vercel.json",
   "git": {
     "deploymentEnabled": false
   }
-}
-
-{
-    "outputDirectory": "dist",
-    "installCommand": "npm install",
-    "buildCommand": "npm run build",
-    "devCommand": "npm run start",
-    "routes": [
-        { "handle": "filesystem" },
-        { "src": "/(.*)", "status": 404, "dest": "/404" }
-      ]
 }
