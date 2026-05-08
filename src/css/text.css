@@ -9,13 +9,11 @@ body{
   margin-left: 50px;
 }
 
-.hyperlink{
+.hyperlink, .hyperlink:visited, .hyperlink:hover, .hyperlink:active{
   color: #04AA6D;
   text-decoration: none;
 }
-.hyperlink:hover{
-  text-decoration: underline;
-}
+
 .badge{
   background-color: #df2929;
   color: #FAF9F6;

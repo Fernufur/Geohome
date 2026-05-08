@@ -14,7 +14,7 @@ div#carousel{
   grid-row: 1/2;
   grid-column: 1/8;
   width: 100vw;
-  height: 72vh;
+  height: 75vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,7 +24,6 @@ div#carousel{
   --items: 7;
   --middle: 5;
   --position: 1;
-  pointer-events: none;
 }
 #carousel::-webkit-scrollbar{
   display: none;
@@ -35,43 +34,46 @@ div#carousel{
 div.card{
   position: absolute;
   width: 500px;
-  height: 100%;
-  background-color: azure;
+  height: 95%;
+  background-color: var(--accent-color1);
   --r: calc(var(--position) - var(--offset));
   --abs: max(calc(var(--r) * -1), var(--r));
   transition: all 0.25s linear;
   transform: rotateY(calc(-10deg * var(--r)))
     translateX(calc(-300px * var(--r)));
   z-index: calc((var(--position) - var(--abs)));
+  box-shadow: 0 0px 70px var(--shadow-color);
 }
 div.card:nth-of-type(1) {
   --offset: 1;
-  background-color: #90f1ef;
+  background-color: var(--card-background-color);
 }
 div.card:nth-of-type(2) {
   --offset: 2;
-  background-color: #ff70a6;
+  background-color: var(--card-background-color);
 }
 div.card:nth-of-type(3) {
   --offset: 3;
-  background-color: #ff9770;
+  background-color: var(--card-background-color);
 }
 div.card:nth-of-type(4) {
   --offset: 4;
-  background-color: #ffd670;
+  background-color: var(--card-background-color);
 }
 div.card:nth-of-type(5) {
   --offset: 5;
-  background-color: #e9ff70;
+  background-color: var(--card-background-color);
 }
 div.card:nth-of-type(6) {
   --offset: 6;
-  background-color: #90f1ef;
+  background-color: var(--card-background-color);
 }
 div.card:nth-of-type(7) {
   --offset: 7;
-  background-color: #ff70a6;
+  background-color: var(--card-background-color);
 }
+
+
 
 
 input:nth-of-type(1) {
@@ -129,3 +131,33 @@ input:nth-of-type(7) {
 input:nth-of-type(7):checked ~ div#carousel {
   --position: 7;
 }
+
+/*------------------------
+       card layouts
+------------------------*/
+
+.card-image{
+  width: 100%;
+}
+.ascii-title{
+  font-family: monospace;
+  white-space: pre;
+  text-decoration: none;
+  color: var(--text-color1);
+  padding: 0em 0.5em 0em 0.5em;
+}
+.card-text{
+  padding: 0em 1em 0.5em 1em;
+}
+
+/*-------------------------
+  individual card layouts
+-------------------------*/
+
+#geosinia-card{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  column-gap: 1em;
+}
+
