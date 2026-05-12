@@ -149,10 +149,5 @@ input:nth-of-type(7):checked ~ div#carousel {
   individual card layouts
 -------------------------*/
 
-#geosinia-card{
-  display: flex;
-  height: 100%;
-  flex-direction: column;
-  column-gap: 1em;
-}
+
 
