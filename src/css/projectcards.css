@@ -18,19 +18,14 @@ div#carousel{
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow-x: auto;
+  overflow: hidden;
   transform-style: preserve-3d;
   perspective: 4000px;
   --items: 7;
   --middle: 5;
   --position: 1;
 }
-#carousel::-webkit-scrollbar{
-  display: none;
-}
-#carousel::scroll-button(right){
-  content: 'Right'
-}
+
 div.card{
   position: absolute;
   width: 500px;

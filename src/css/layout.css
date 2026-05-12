@@ -22,6 +22,10 @@ aside{
   position: sticky;
 }
 
+.grid-base{
+  display: grid;
+}
+
 /*---------------
   header layout
 ---------------*/
@@ -55,9 +59,14 @@ aside{
 ---------*/
 
 
-
-#title-bg{
-  width: 100%;
+.section{
+  position: absolute;
+  bottom: 8px;
+  height: calc(100vh - calc(var(--header-height) + 8px));
+  width: 100vw;
+}
+.section-bg{
+  width: 100vw;
   max-height: 300px;
 }
 
